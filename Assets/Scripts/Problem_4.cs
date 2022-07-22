@@ -11,5 +11,23 @@ public class Problem_4 : MonoBehaviour
     */
     void Start()
     {
+        List<int> myList = new List<int>(10);
+        for (int i = 1; i < 144; i++)
+        {
+            if (i % 2 == 1 && i % 7 == 0)
+                myList.Add(i);
+        }
+        int[] halfmyList = new int[myList.Count / 2];
+        for (int i = 0; i < halfmyList.Length; i++)
+        {
+            halfmyList[i] = myList[i * 2];
+        }
+        foreach (var list in halfmyList)
+        {
+            print(list);
+        }
     }
 }
+
+
+

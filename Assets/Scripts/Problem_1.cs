@@ -8,8 +8,16 @@ public class Problem_1 : MonoBehaviour
     */
     void Start()
     {
-        int[] parts = new int[10] { 12, 3, 4234, 123, 325453141, 123, 123213, 1, 4, 32 };
-        int sum = 0;
+        int[] array = new int[10] { 12, 3, 4234, 123, 325453141, 123, 123213, 1, 4, 32 };
+        int largest = 0;
+
+        for (int i = 0; i < array.Length; i++) {
+            largest += array[i];
+        }
+        print(largest);
+
     }
 }
+
+
 
